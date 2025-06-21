@@ -33,6 +33,24 @@ namespace AppInstitucionEducativa
                 Curso nuevoCurso = new Curso(inputNuevoCurso.Text, profesorEncontrado);
             }
         }
-        
+
+        private void btnRegistrarNuevoCurso_Click(object sender, EventArgs e)
+        {
+            string nuevoCurso = inputNuevoCurso.Text;
+            string profesorCurso = inputProfesorNuevoCurso.Text;
+            var profesorObj = _listaProfesores.Find(l => l.Nombre.Equals(profesorCurso, StringComparison.OrdinalIgnoreCase));
+            if (profesorObj != null)
+            {
+                MessageBox.Show("Profesor no encontrado");
+            }
+            else
+            {
+                Curso nuevoObjCurso = new Curso(nuevoCurso, profesorObj);
+                MessageBox.Show("Se ha agregado correctamente el estudiante: " + "\n" + nuevoObjCurso.MostrarInformacion());
+                _listaCursos.Add(nuevoObjCurso);
+            }
+            inputNuevoCurso.Text = "";
+            inputProfesorNuevoCurso.Text = "";            
+        }
     }
 }

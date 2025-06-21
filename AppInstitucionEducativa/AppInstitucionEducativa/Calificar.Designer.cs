@@ -1,6 +1,6 @@
 ﻿namespace AppInstitucionEducativa
 {
-    partial class InscribirCursoEstudiante
+    partial class Calificar
     {
         /// <summary>
         /// Required designer variable.
@@ -28,96 +28,99 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnInscribirEstudianteCurso = new Button();
-            inputNombreEstudianteNuevoCurso = new TextBox();
-            inputNuevoCursoEstudiante = new TextBox();
+            btnRegistrarCalificacion = new Button();
+            inputNombreEstudiante = new TextBox();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
+            inputNota = new NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)inputNota).BeginInit();
             SuspendLayout();
             // 
-            // btnInscribirEstudianteCurso
+            // btnRegistrarCalificacion
             // 
-            btnInscribirEstudianteCurso.ForeColor = SystemColors.ActiveCaptionText;
-            btnInscribirEstudianteCurso.Location = new Point(408, 264);
-            btnInscribirEstudianteCurso.Name = "btnInscribirEstudianteCurso";
-            btnInscribirEstudianteCurso.Size = new Size(75, 23);
-            btnInscribirEstudianteCurso.TabIndex = 13;
-            btnInscribirEstudianteCurso.Text = "Registrar";
-            btnInscribirEstudianteCurso.UseVisualStyleBackColor = true;
-            btnInscribirEstudianteCurso.Click += btnInscribirEstudianteCurso_Click;
+            btnRegistrarCalificacion.ForeColor = SystemColors.ActiveCaptionText;
+            btnRegistrarCalificacion.Location = new Point(408, 247);
+            btnRegistrarCalificacion.Name = "btnRegistrarCalificacion";
+            btnRegistrarCalificacion.Size = new Size(75, 23);
+            btnRegistrarCalificacion.TabIndex = 13;
+            btnRegistrarCalificacion.Text = "Registrar";
+            btnRegistrarCalificacion.UseVisualStyleBackColor = true;
+            btnRegistrarCalificacion.Click += btnRegistrarCalificacion_Click;
             // 
-            // inputNombreEstudianteNuevoCurso
+            // inputNombreEstudiante
             // 
-            inputNombreEstudianteNuevoCurso.Location = new Point(218, 213);
-            inputNombreEstudianteNuevoCurso.Name = "inputNombreEstudianteNuevoCurso";
-            inputNombreEstudianteNuevoCurso.Size = new Size(265, 23);
-            inputNombreEstudianteNuevoCurso.TabIndex = 12;
-            // 
-            // inputNuevoCursoEstudiante
-            // 
-            inputNuevoCursoEstudiante.Location = new Point(218, 154);
-            inputNuevoCursoEstudiante.Name = "inputNuevoCursoEstudiante";
-            inputNuevoCursoEstudiante.Size = new Size(265, 23);
-            inputNuevoCursoEstudiante.TabIndex = 11;
+            inputNombreEstudiante.Location = new Point(249, 137);
+            inputNombreEstudiante.Name = "inputNombreEstudiante";
+            inputNombreEstudiante.Size = new Size(234, 23);
+            inputNombreEstudiante.TabIndex = 11;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F);
             label3.ForeColor = SystemColors.Desktop;
-            label3.Location = new Point(69, 214);
+            label3.Location = new Point(74, 197);
             label3.Name = "label3";
-            label3.Size = new Size(147, 21);
+            label3.Size = new Size(92, 21);
             label3.TabIndex = 10;
-            label3.Text = "Nombre Estudiante:";
+            label3.Text = "Calificación:";
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F);
             label2.ForeColor = SystemColors.Desktop;
-            label2.Location = new Point(69, 156);
+            label2.Location = new Point(74, 139);
             label2.Name = "label2";
-            label2.Size = new Size(138, 21);
+            label2.Size = new Size(172, 21);
             label2.TabIndex = 9;
-            label2.Text = "Nombre del curso:";
+            label2.Text = "Nombre del estudiante:";
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 30F);
             label1.ForeColor = SystemColors.Desktop;
-            label1.Location = new Point(20, 34);
+            label1.Location = new Point(74, 22);
             label1.Name = "label1";
-            label1.Size = new Size(524, 54);
+            label1.Size = new Size(380, 54);
             label1.TabIndex = 8;
-            label1.Text = "Inscripción Curso Estudiante";
+            label1.Text = "Registro Calificación";
             // 
-            // InscribirCursoEstudiante
+            // inputNota
+            // 
+            inputNota.Location = new Point(249, 195);
+            inputNota.Name = "inputNota";
+            inputNota.Size = new Size(234, 23);
+            inputNota.TabIndex = 14;
+            // 
+            // Calificar
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(556, 361);
-            Controls.Add(btnInscribirEstudianteCurso);
-            Controls.Add(inputNombreEstudianteNuevoCurso);
-            Controls.Add(inputNuevoCursoEstudiante);
+            Controls.Add(inputNota);
+            Controls.Add(btnRegistrarCalificacion);
+            Controls.Add(inputNombreEstudiante);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Name = "InscribirCursoEstudiante";
-            Text = "InscribirCursoEstudiante";
+            ForeColor = SystemColors.Desktop;
+            Name = "Calificar";
+            Text = "Calificar";
+            ((System.ComponentModel.ISupportInitialize)inputNota).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Button btnInscribirEstudianteCurso;
-        private TextBox inputNombreEstudianteNuevoCurso;
-        private TextBox inputNuevoCursoEstudiante;
+        private Button btnRegistrarCalificacion;
+        private TextBox inputNombreEstudiante;
         private Label label3;
         private Label label2;
         private Label label1;
+        private NumericUpDown inputNota;
     }
 }

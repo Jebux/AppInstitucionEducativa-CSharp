@@ -17,9 +17,9 @@ namespace AppInstitucionEducativa
             Curso = null;
         }
 
-        public override void MostrarInformacion()
+        public override string MostrarInformacion()
         {
-            MessageBox.Show($"Nombre: {Nombre}" +
+            return ($"Nombre: {Nombre}" +
                 $"\nDocumento: {Documento}" +
                 $"\nGrado: {Especialidad}");
         }

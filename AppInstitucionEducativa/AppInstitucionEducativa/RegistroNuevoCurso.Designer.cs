@@ -92,6 +92,7 @@
             btnRegistrarNuevoCurso.TabIndex = 7;
             btnRegistrarNuevoCurso.Text = "Registrar";
             btnRegistrarNuevoCurso.UseVisualStyleBackColor = true;
+            btnRegistrarNuevoCurso.Click += btnRegistrarNuevoCurso_Click;
             // 
             // RegistroNuevoCurso
             // 

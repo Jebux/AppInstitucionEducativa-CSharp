@@ -25,8 +25,11 @@ namespace AppInstitucionEducativa
             decimal docProfesor = inputDocumentoNuevoProfesor.Value;
             string especialidadProfesor = inputEspecialidadNuevoProfesor.Text;
             Profesor nuevoObjProfesor = new Profesor(nuevoProfesor, docProfesor, especialidadProfesor);
-            nuevoObjProfesor.MostrarInformacion();
+            MessageBox.Show("Se ha agregado correctamente el estudiante: " + "\n" + nuevoObjProfesor.MostrarInformacion());
             _listaProfesores.Add(nuevoObjProfesor);
+            inputNuevoProfesor.Text = "";
+            inputDocumentoNuevoProfesor.Value = 0;
+            inputEspecialidadNuevoProfesor.Text = "";
         }
     }
 }

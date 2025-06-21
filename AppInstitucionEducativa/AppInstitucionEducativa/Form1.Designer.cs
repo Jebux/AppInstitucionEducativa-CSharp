@@ -30,7 +30,7 @@
         {
             panel1 = new Panel();
             button8 = new Button();
-            button5 = new Button();
+            btnCalificar = new Button();
             panelInscribirBtns = new Panel();
             button6 = new Button();
             button7 = new Button();
@@ -56,7 +56,7 @@
             // 
             panel1.BackColor = Color.FromArgb(38, 111, 140);
             panel1.Controls.Add(button8);
-            panel1.Controls.Add(button5);
+            panel1.Controls.Add(btnCalificar);
             panel1.Controls.Add(panelInscribirBtns);
             panel1.Controls.Add(btnInscribir);
             panel1.Controls.Add(panelRegistrarBtns);
@@ -65,7 +65,7 @@
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 76);
             panel1.Name = "panel1";
-            panel1.Size = new Size(182, 567);
+            panel1.Size = new Size(182, 393);
             panel1.TabIndex = 0;
             // 
             // button8
@@ -84,20 +84,21 @@
             button8.UseVisualStyleBackColor = false;
             button8.Click += btnInformacionCursos_Click;
             // 
-            // button5
+            // btnCalificar
             // 
-            button5.BackColor = Color.FromArgb(28, 72, 89);
-            button5.Dock = DockStyle.Top;
-            button5.FlatAppearance.BorderSize = 0;
-            button5.FlatStyle = FlatStyle.Flat;
-            button5.ForeColor = Color.Transparent;
-            button5.Location = new Point(0, 357);
-            button5.Margin = new Padding(0);
-            button5.Name = "button5";
-            button5.Size = new Size(182, 40);
-            button5.TabIndex = 6;
-            button5.Text = "CALIFICAR";
-            button5.UseVisualStyleBackColor = false;
+            btnCalificar.BackColor = Color.FromArgb(28, 72, 89);
+            btnCalificar.Dock = DockStyle.Top;
+            btnCalificar.FlatAppearance.BorderSize = 0;
+            btnCalificar.FlatStyle = FlatStyle.Flat;
+            btnCalificar.ForeColor = Color.Transparent;
+            btnCalificar.Location = new Point(0, 357);
+            btnCalificar.Margin = new Padding(0);
+            btnCalificar.Name = "btnCalificar";
+            btnCalificar.Size = new Size(182, 40);
+            btnCalificar.TabIndex = 6;
+            btnCalificar.Text = "CALIFICAR";
+            btnCalificar.UseVisualStyleBackColor = false;
+            btnCalificar.Click += btnCalificar_Click;
             // 
             // panelInscribirBtns
             // 
@@ -248,7 +249,6 @@
             label2.Size = new Size(182, 73);
             label2.TabIndex = 0;
             label2.TextAlign = ContentAlignment.MiddleCenter;
-            label2.Click += label2_Click;
             // 
             // panel2
             // 
@@ -277,7 +277,7 @@
             mainPanel.Dock = DockStyle.Fill;
             mainPanel.Location = new Point(182, 76);
             mainPanel.Name = "mainPanel";
-            mainPanel.Size = new Size(572, 567);
+            mainPanel.Size = new Size(572, 393);
             mainPanel.TabIndex = 2;
             // 
             // label3
@@ -296,7 +296,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(37, 37, 84);
-            ClientSize = new Size(754, 643);
+            ClientSize = new Size(754, 469);
             Controls.Add(mainPanel);
             Controls.Add(panel1);
             Controls.Add(panel2);
@@ -330,7 +330,7 @@
         private Button button6;
         private Button button7;
         private Button button8;
-        private Button button5;
+        private Button btnCalificar;
         private Label label3;
     }
 }

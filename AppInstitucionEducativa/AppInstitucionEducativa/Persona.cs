@@ -17,7 +17,7 @@ namespace AppInstitucionEducativa
             Documento = documento;
         }
 
-        public abstract void MostrarInformacion();
+        public abstract string MostrarInformacion();
         
     }
 }

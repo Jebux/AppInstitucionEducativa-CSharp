@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\source\\repos\\AppInstitucionEducativa-CSharp\\AppInstitucionEducativa\\AppInstitucionEducativa\\AppInstitucionEducativa.csproj": {}
+    "C:\\Users\\estudiante.upb\\source\\repos\\AppInstitucionEducativa-CSharp\\AppInstitucionEducativa\\AppInstitucionEducativa\\AppInstitucionEducativa.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\source\\repos\\AppInstitucionEducativa-CSharp\\AppInstitucionEducativa\\AppInstitucionEducativa\\AppInstitucionEducativa.csproj": {
+    "C:\\Users\\estudiante.upb\\source\\repos\\AppInstitucionEducativa-CSharp\\AppInstitucionEducativa\\AppInstitucionEducativa\\AppInstitucionEducativa.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\AppInstitucionEducativa-CSharp\\AppInstitucionEducativa\\AppInstitucionEducativa\\AppInstitucionEducativa.csproj",
+        "projectUniqueName": "C:\\Users\\estudiante.upb\\source\\repos\\AppInstitucionEducativa-CSharp\\AppInstitucionEducativa\\AppInstitucionEducativa\\AppInstitucionEducativa.csproj",
         "projectName": "AppInstitucionEducativa",
-        "projectPath": "C:\\Users\\Usuario\\source\\repos\\AppInstitucionEducativa-CSharp\\AppInstitucionEducativa\\AppInstitucionEducativa\\AppInstitucionEducativa.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\source\\repos\\AppInstitucionEducativa-CSharp\\AppInstitucionEducativa\\AppInstitucionEducativa\\obj\\",
+        "projectPath": "C:\\Users\\estudiante.upb\\source\\repos\\AppInstitucionEducativa-CSharp\\AppInstitucionEducativa\\AppInstitucionEducativa\\AppInstitucionEducativa.csproj",
+        "packagesPath": "C:\\Users\\estudiante.upb\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\estudiante.upb\\source\\repos\\AppInstitucionEducativa-CSharp\\AppInstitucionEducativa\\AppInstitucionEducativa\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\estudiante.upb\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -38,13 +38,7 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -68,7 +62,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

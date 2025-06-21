@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             btnInscribirProfesorCurso = new Button();
-            inputProfesorNuevoCurso = new TextBox();
-            inputNuevoCurso = new TextBox();
+            inputNombreProfesorNuevoCurso = new TextBox();
+            inputNombreNuevoCursoProfesor = new TextBox();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
@@ -45,20 +45,21 @@
             btnInscribirProfesorCurso.TabIndex = 19;
             btnInscribirProfesorCurso.Text = "Registrar";
             btnInscribirProfesorCurso.UseVisualStyleBackColor = true;
+            btnInscribirProfesorCurso.Click += btnInscribirProfesorCurso_Click;
             // 
-            // inputProfesorNuevoCurso
+            // inputNombreProfesorNuevoCurso
             // 
-            inputProfesorNuevoCurso.Location = new Point(217, 211);
-            inputProfesorNuevoCurso.Name = "inputProfesorNuevoCurso";
-            inputProfesorNuevoCurso.Size = new Size(265, 23);
-            inputProfesorNuevoCurso.TabIndex = 18;
+            inputNombreProfesorNuevoCurso.Location = new Point(217, 211);
+            inputNombreProfesorNuevoCurso.Name = "inputNombreProfesorNuevoCurso";
+            inputNombreProfesorNuevoCurso.Size = new Size(265, 23);
+            inputNombreProfesorNuevoCurso.TabIndex = 18;
             // 
-            // inputNuevoCurso
+            // inputNombreNuevoCursoProfesor
             // 
-            inputNuevoCurso.Location = new Point(217, 152);
-            inputNuevoCurso.Name = "inputNuevoCurso";
-            inputNuevoCurso.Size = new Size(265, 23);
-            inputNuevoCurso.TabIndex = 17;
+            inputNombreNuevoCursoProfesor.Location = new Point(217, 152);
+            inputNombreNuevoCursoProfesor.Name = "inputNombreNuevoCursoProfesor";
+            inputNombreNuevoCursoProfesor.Size = new Size(265, 23);
+            inputNombreNuevoCursoProfesor.TabIndex = 17;
             // 
             // label3
             // 
@@ -99,8 +100,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(556, 361);
             Controls.Add(btnInscribirProfesorCurso);
-            Controls.Add(inputProfesorNuevoCurso);
-            Controls.Add(inputNuevoCurso);
+            Controls.Add(inputNombreProfesorNuevoCurso);
+            Controls.Add(inputNombreNuevoCursoProfesor);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -113,8 +114,8 @@
         #endregion
 
         private Button btnInscribirProfesorCurso;
-        private TextBox inputProfesorNuevoCurso;
-        private TextBox inputNuevoCurso;
+        private TextBox inputNombreProfesorNuevoCurso;
+        private TextBox inputNombreNuevoCursoProfesor;
         private Label label3;
         private Label label2;
         private Label label1;

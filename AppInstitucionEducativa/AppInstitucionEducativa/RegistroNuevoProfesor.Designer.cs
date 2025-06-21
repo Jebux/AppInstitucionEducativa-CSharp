@@ -111,6 +111,7 @@
             // inputDocumentoNuevoProfesor
             // 
             inputDocumentoNuevoProfesor.Location = new Point(218, 153);
+            inputDocumentoNuevoProfesor.Maximum = new decimal(new int[] { 9999999, 0, 0, 0 });
             inputDocumentoNuevoProfesor.Name = "inputDocumentoNuevoProfesor";
             inputDocumentoNuevoProfesor.Size = new Size(265, 23);
             inputDocumentoNuevoProfesor.TabIndex = 18;

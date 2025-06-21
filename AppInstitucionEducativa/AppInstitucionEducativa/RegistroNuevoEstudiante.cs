@@ -25,8 +25,11 @@ namespace AppInstitucionEducativa
             decimal docEstudiante = inputDocumentoEstudiante.Value;
             string gradoEstudiante = inputGradoEstudiante.Text;
             Estudiante nuevoObjEstudiante = new Estudiante(nuevoEstudiante,docEstudiante,gradoEstudiante);
-            nuevoObjEstudiante.MostrarInformacion();
+            MessageBox.Show("Se ha agregado correctamente el estudiante: "+ "\n" + nuevoObjEstudiante.MostrarInformacion());
             _listaEstudiantes.Add(nuevoObjEstudiante);
+            inputNuevoEstudiante.Text = "";
+            inputDocumentoEstudiante.Value = 0;
+            inputGradoEstudiante.Text = "";
         }
     }
 }
