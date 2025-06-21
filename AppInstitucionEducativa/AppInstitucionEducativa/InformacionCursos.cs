@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,30 +13,26 @@ namespace AppInstitucionEducativa
 {
     public partial class InformacionCursos : Form
     {
-        private List<Persona> _listaEstudiantes;
-        public InformacionCursos(List<Persona> estudiantes)
+        private List<Estudiante> _listaEstudiantes;
+        private List<Profesor> _listaProfesores;
+        private List<Curso> _listaCursos;
+        public InformacionCursos(List<Estudiante> estudiantes, List<Profesor> profesores, List<Curso> cursos)
         {
             InitializeComponent();
+            _listaProfesores = profesores;
+            _listaCursos = cursos;
             _listaEstudiantes = estudiantes;
-
-            MostrarEnGrid();
-
+            Informacion();
         }
-
-
-        private void MostrarEnGrid()
+        
+        public void Informacion()
         {
-            // Convertimos a una lista anónima para que el Grid entienda las propiedades
-            var listaVisual = _listaEstudiantes
-                .Select(e => new
-                {
-                    Nombre = e.Nombre,
-                    Documento = e.Documento,
-                    Grado = (e is Estudiante est) ? est.Grado : "N/A"
-                })
-                .ToList();
+            var gridProfesores = _listaProfesores.Select(p => new { p.Nombre, p.Documento, p.Especialidad, p.Curso }).ToList();
 
-            testingGrid.DataSource = listaVisual;
+            profesoresGrid.DataSource = gridProfesores;
+            estudiantesGrid.DataSource = _listaEstudiantes;
+            cursosGrid.DataSource = _listaCursos;
         }
+        
     }
 }

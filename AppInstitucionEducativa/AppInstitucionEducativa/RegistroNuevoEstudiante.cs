@@ -12,8 +12,8 @@ namespace AppInstitucionEducativa
 {
     public partial class RegistroNuevoEstudiante : Form
     {
-        private List<Persona> _listaEstudiantes;
-        public RegistroNuevoEstudiante(List<Persona> estudiantes)
+        private List<Estudiante> _listaEstudiantes;
+        public RegistroNuevoEstudiante(List<Estudiante> estudiantes)
         {
             InitializeComponent();
             _listaEstudiantes = estudiantes;

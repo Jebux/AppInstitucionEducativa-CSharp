@@ -7,6 +7,12 @@
     <Compile Update="InformacionCursos.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="InscribirCursoEstudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="InscribirCursoProfesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="RegistroNuevoCurso.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -65,7 +65,7 @@
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 76);
             panel1.Name = "panel1";
-            panel1.Size = new Size(182, 398);
+            panel1.Size = new Size(182, 567);
             panel1.TabIndex = 0;
             // 
             // button8
@@ -82,6 +82,7 @@
             button8.TabIndex = 7;
             button8.Text = "INFORMACIÓN CURSOS";
             button8.UseVisualStyleBackColor = false;
+            button8.Click += btnInformacionCursos_Click;
             // 
             // button5
             // 
@@ -124,6 +125,7 @@
             button6.Text = "  Inscribir Profesor a Curso";
             button6.TextAlign = ContentAlignment.MiddleLeft;
             button6.UseVisualStyleBackColor = false;
+            button6.Click += btnInscribirProfesor_Click;
             // 
             // button7
             // 
@@ -140,6 +142,7 @@
             button7.Text = "  Inscribir Estudiante a Curso";
             button7.TextAlign = ContentAlignment.MiddleLeft;
             button7.UseVisualStyleBackColor = false;
+            button7.Click += btnInscribirEstudiante_Click;
             // 
             // btnInscribir
             // 
@@ -274,17 +277,17 @@
             mainPanel.Dock = DockStyle.Fill;
             mainPanel.Location = new Point(182, 76);
             mainPanel.Name = "mainPanel";
-            mainPanel.Size = new Size(572, 398);
+            mainPanel.Size = new Size(572, 567);
             mainPanel.TabIndex = 2;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Adobe Fan Heiti Std B", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.Black;
             label3.Location = new Point(144, 162);
             label3.Name = "label3";
-            label3.Size = new Size(303, 40);
+            label3.Size = new Size(320, 37);
             label3.TabIndex = 0;
             label3.Text = "Bienvenido a la App";
             // 
@@ -293,7 +296,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(37, 37, 84);
-            ClientSize = new Size(754, 474);
+            ClientSize = new Size(754, 643);
             Controls.Add(mainPanel);
             Controls.Add(panel1);
             Controls.Add(panel2);

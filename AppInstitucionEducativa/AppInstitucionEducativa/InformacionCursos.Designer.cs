@@ -28,33 +28,58 @@
         /// </summary>
         private void InitializeComponent()
         {
-            testingGrid = new DataGridView();
-            ((System.ComponentModel.ISupportInitialize)testingGrid).BeginInit();
+            estudiantesGrid = new DataGridView();
+            profesoresGrid = new DataGridView();
+            cursosGrid = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)estudiantesGrid).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)profesoresGrid).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)cursosGrid).BeginInit();
             SuspendLayout();
             // 
-            // testingGrid
+            // estudiantesGrid
             // 
-            testingGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            testingGrid.Location = new Point(166, 113);
-            testingGrid.Name = "testingGrid";
-            testingGrid.Size = new Size(240, 150);
-            testingGrid.TabIndex = 0;
+            estudiantesGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            estudiantesGrid.Location = new Point(35, 27);
+            estudiantesGrid.Name = "estudiantesGrid";
+            estudiantesGrid.Size = new Size(240, 150);
+            estudiantesGrid.TabIndex = 0;
+            // 
+            // profesoresGrid
+            // 
+            profesoresGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            profesoresGrid.Location = new Point(294, 126);
+            profesoresGrid.Name = "profesoresGrid";
+            profesoresGrid.Size = new Size(240, 150);
+            profesoresGrid.TabIndex = 1;
+            // 
+            // cursosGrid
+            // 
+            cursosGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            cursosGrid.Location = new Point(35, 199);
+            cursosGrid.Name = "cursosGrid";
+            cursosGrid.Size = new Size(240, 150);
+            cursosGrid.TabIndex = 2;
             // 
             // InformacionCursos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(556, 361);
-            Controls.Add(testingGrid);
+            Controls.Add(cursosGrid);
+            Controls.Add(profesoresGrid);
+            Controls.Add(estudiantesGrid);
             Name = "InformacionCursos";
             Text = "InformacionCursos";
-            Load += InformacionCursos_Load;
-            ((System.ComponentModel.ISupportInitialize)testingGrid).EndInit();
+            ((System.ComponentModel.ISupportInitialize)estudiantesGrid).EndInit();
+            ((System.ComponentModel.ISupportInitialize)profesoresGrid).EndInit();
+            ((System.ComponentModel.ISupportInitialize)cursosGrid).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private DataGridView testingGrid;
+        private DataGridView estudiantesGrid;
+        private DataGridView profesoresGrid;
+        private DataGridView cursosGrid;
     }
 }

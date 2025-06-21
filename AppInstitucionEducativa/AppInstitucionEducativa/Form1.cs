@@ -7,7 +7,12 @@ namespace AppInstitucionEducativa
             InitializeComponent();
         }
 
-        public List<Persona> integrantes = new List<Persona>(); 
+        public List<Profesor> profesores = new List<Profesor>();
+
+        public List<Estudiante> estudiantes = new List<Estudiante>();
+
+        public List<Curso> cursos = new List<Curso>();
+
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -47,10 +52,13 @@ namespace AppInstitucionEducativa
 
             if (mainPanel.Controls.Count > 0)
             {
-                var oldForm = mainPanel.Controls[0] as Form;
-                oldForm?.Close();
-                oldForm?.Dispose();
-                mainPanel.Controls.RemoveAt(0);
+                Control control = mainPanel.Controls[0];
+                if (control is Form oldForm)
+                {
+                    oldForm.Close();
+                    oldForm.Dispose();
+                }
+                mainPanel.Controls.Remove(control);
             }
 
             formToLoad.TopLevel = false;
@@ -63,17 +71,31 @@ namespace AppInstitucionEducativa
 
         private void btnNuevoEstudiante_Click(object sender, EventArgs e)
         {
-            loadform(new RegistroNuevoEstudiante(integrantes));
+            loadform(new RegistroNuevoEstudiante(estudiantes));
         }
 
         private void btnNuevoProfesor_Click(object sender, EventArgs e)
         {
-            loadform(new RegistroNuevoProfesor());
+            loadform(new RegistroNuevoProfesor(profesores));
         }
 
         private void btnNuevoCurso_Click(object sender, EventArgs e)
         {
-            loadform(new RegistroNuevoCurso());
+            loadform(new RegistroNuevoCurso(cursos, profesores));
+        }
+
+        private void btnInformacionCursos_Click(object sender, EventArgs e)
+        {
+            loadform(new InformacionCursos(estudiantes,profesores,cursos));
+        }
+
+        private void btnInscribirEstudiante_Click(object sender, EventArgs e)
+        {
+            loadform(new InscribirCursoEstudiante());
+        }
+        private void btnInscribirProfesor_Click(object sender, EventArgs e)
+        {
+            loadform(new InscribirCursoProfesor());
         }
     }
 }

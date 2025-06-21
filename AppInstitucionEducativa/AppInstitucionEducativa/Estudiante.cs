@@ -9,12 +9,12 @@ namespace AppInstitucionEducativa
     public class Estudiante:Persona
     {
         public string Grado { get; set; }
-        public string Curso { get; set; }
+        public List<string> Curso { get; set; }
 
         public Estudiante(string nombre, decimal documento, string grado):base(nombre,documento)
         {
             Grado = grado;
-            Curso = null;
+            Curso = new List<string>();
         }
 
         public override void MostrarInformacion()
@@ -26,7 +26,7 @@ namespace AppInstitucionEducativa
 
         public void InscribirCurso(string curso)
         {
-            Curso = curso;
+            Curso.Add(curso);
         }
     }
 }

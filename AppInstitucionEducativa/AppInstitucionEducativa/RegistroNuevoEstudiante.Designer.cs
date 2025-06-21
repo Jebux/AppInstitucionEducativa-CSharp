@@ -61,6 +61,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.ForeColor = SystemColors.Desktop;
             label2.Location = new Point(81, 113);
             label2.Name = "label2";
             label2.Size = new Size(71, 21);
@@ -71,7 +72,8 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(81, 142);
+            label3.ForeColor = SystemColors.Desktop;
+            label3.Location = new Point(81, 156);
             label3.Name = "label3";
             label3.Size = new Size(94, 21);
             label3.TabIndex = 4;
@@ -81,7 +83,8 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(81, 171);
+            label4.ForeColor = SystemColors.Desktop;
+            label4.Location = new Point(81, 202);
             label4.Name = "label4";
             label4.Size = new Size(56, 21);
             label4.TabIndex = 6;
@@ -89,14 +92,14 @@
             // 
             // inputGradoEstudiante
             // 
-            inputGradoEstudiante.Location = new Point(240, 170);
+            inputGradoEstudiante.Location = new Point(240, 201);
             inputGradoEstudiante.Name = "inputGradoEstudiante";
             inputGradoEstudiante.Size = new Size(256, 23);
             inputGradoEstudiante.TabIndex = 5;
             // 
             // inputDocumentoEstudiante
             // 
-            inputDocumentoEstudiante.Location = new Point(240, 140);
+            inputDocumentoEstudiante.Location = new Point(240, 154);
             inputDocumentoEstudiante.Maximum = new decimal(new int[] { 99999999, 0, 0, 0 });
             inputDocumentoEstudiante.Name = "inputDocumentoEstudiante";
             inputDocumentoEstudiante.Size = new Size(256, 23);
@@ -104,7 +107,8 @@
             // 
             // btnRegistrarEstudiante
             // 
-            btnRegistrarEstudiante.Location = new Point(421, 215);
+            btnRegistrarEstudiante.ForeColor = SystemColors.Desktop;
+            btnRegistrarEstudiante.Location = new Point(421, 246);
             btnRegistrarEstudiante.Name = "btnRegistrarEstudiante";
             btnRegistrarEstudiante.Size = new Size(75, 23);
             btnRegistrarEstudiante.TabIndex = 8;

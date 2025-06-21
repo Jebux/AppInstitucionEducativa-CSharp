@@ -12,9 +12,21 @@ namespace AppInstitucionEducativa
 {
     public partial class RegistroNuevoProfesor : Form
     {
-        public RegistroNuevoProfesor()
+        private List<Profesor> _listaProfesores;
+        public RegistroNuevoProfesor(List<Profesor> profesores)
         {
             InitializeComponent();
+            _listaProfesores = profesores;
+        }
+
+        private void btnRegistrarNuevoProfesor_Click(object sender, EventArgs e)
+        {
+            string nuevoProfesor = inputNuevoProfesor.Text;
+            decimal docProfesor = inputDocumentoNuevoProfesor.Value;
+            string especialidadProfesor = inputEspecialidadNuevoProfesor.Text;
+            Profesor nuevoObjProfesor = new Profesor(nuevoProfesor, docProfesor, especialidadProfesor);
+            nuevoObjProfesor.MostrarInformacion();
+            _listaProfesores.Add(nuevoObjProfesor);
         }
     }
 }

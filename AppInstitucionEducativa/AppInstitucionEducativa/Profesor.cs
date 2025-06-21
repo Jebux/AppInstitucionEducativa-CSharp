@@ -11,10 +11,10 @@ namespace AppInstitucionEducativa
         public string Especialidad { get; set; }
         public string Curso { get; set; }
 
-        public Profesor(string nombre, int documento, string especialidad, string curso) : base(nombre, documento)
+        public Profesor(string nombre, decimal documento, string especialidad) : base(nombre, documento)
         {
             Especialidad = especialidad;
-            Curso = curso;
+            Curso = null;
         }
 
         public override void MostrarInformacion()
